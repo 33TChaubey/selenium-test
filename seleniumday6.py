@@ -25,9 +25,9 @@ driver.switch_to.window(windowhandle1[1])
 assert "Sachin Tendulkar - Wikipedia" in driver.title
 print("switch to child window")
 time.sleep(5)
+
+
 driver.switch_to.window(windowhandle1[0])
 assert "Automation Testing Practice" in driver.title
 print("switch to parent window")
 time.sleep(5)
-
-
