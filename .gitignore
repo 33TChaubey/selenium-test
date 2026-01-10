@@ -1,0 +1,51 @@
+# --- Python Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+.venv
+
+# --- Java/Maven/Gradle (If using Java) ---
+target/
+.gradle/
+build/
+*.class
+
+# --- Selenium/Webdriver Specifics ---
+# Ignore the actual drivers (always download them via WebDriverManager)
+drivers/
+*.exe
+chromedriver
+geckodriver
+IEDriverServer.exe
+
+# --- Browser Logs & Temp Files ---
+logs/
+*.log
+ghostdriver.log
+geckodriver.log
+chromedriver.log
+
+# --- Test Reports & Screenshots ---
+# You usually don't want to version control failure screenshots
+screenshots/
+test-output/
+htmlcov/
+reports/
+.pytest_cache/
+allure-results/
+
+# --- IDE Specifics ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store (Mac specific)
+
+# --- Configuration Secrets ---
+# Keep your credentials private!
+config.json
+credentials.yaml
+secrets.py
