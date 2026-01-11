@@ -23,3 +23,12 @@ action.move_to_element(draganddrop).perform()
 time.sleep(5)
 static.click()
 time.sleep(5)
+
+
+driver.get("https://testautomationpractice.blogspot.com/")
+doubleclickbutton=driver.find_element(By.XPATH, "//button[text()='Copy Text']")
+time.sleep(5)
+action.scroll_to_element(doubleclickbutton).perform()
+time.sleep(5)
+action.double_click(doubleclickbutton).perform()
+time.sleep(5)
